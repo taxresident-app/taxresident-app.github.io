@@ -30,6 +30,7 @@
         }
         .header p {
             font-size: 15px;
+            color: #FFFFFF;
             opacity: 0.85;
         }
         .container {
@@ -136,7 +137,7 @@
     <p>Everything you enter or the App records is stored in a database on your device:</p>
     <ul>
         <li><strong>Profile</strong> — the name and nationality you enter</li>
-        <li><strong>Day records</strong> — the country (and, in the United States, the state) for each day, entered by you or recorded automatically, plus your planned trips</li>
+        <li><strong>Day records</strong> — the country (and, in the United States, the state) and the name of the city or town for each day, entered by you or recorded automatically, plus your planned trips</li>
         <li><strong>Documents</strong> — passport, visa and residence-permit details and expiry dates, and any photos of them you add</li>
         <li><strong>Settings</strong> — language, notifications, app lock and similar preferences</li>
     </ul>
@@ -145,7 +146,7 @@
     <h2>3. Location</h2>
     <p>Location access is optional. You can record every day by hand instead.</p>
     <p>If you allow it, the App uses Apple's location services to work out which country you are in — when you check in, and, if you choose "Always" and turn on automatic detection, in the background when iOS reports that you have arrived somewhere new. The App does not track you continuously.</p>
-    <p>To turn a position into a country, the App uses Apple's built-in geocoding service, which sends the position to Apple and is covered by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The App then keeps only the country code (and US state) and the date. It does not store or send your coordinates, and we never receive any location data.</p>
+    <p>To turn a position into a country, the App uses Apple's built-in geocoding service, which sends the position to Apple and is covered by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The App then keeps only the country (and US state), the name of the city or town, and the date. It never stores or sends your coordinates, and we never receive any location data.</p>
     <p>You can change or revoke location access at any time in iPhone Settings → Privacy &amp; Security → Location Services → TAX Resident.</p>
 
     <h2>4. iCloud Sync</h2>
@@ -153,7 +154,7 @@
     <p>Document photos are not synced — they stay only on the device where you added them.</p>
 
     <h2>5. Backups you export</h2>
-    <p>When you use Export or Backup, the App creates a file and hands it to the iOS share sheet. Where it goes next is your choice. This file is not encrypted, so keep it somewhere safe.</p>
+    <p>When you use Export or Backup, the App creates a file and hands it to the iOS share sheet. Where it goes next is your choice. From version 1.10 you can protect the file with a password (it is then encrypted with AES-256). Without a password the file is not encrypted, so keep it somewhere safe.</p>
 
     <h2>6. Camera, photos and Face ID</h2>
     <p>The App asks for camera or photo-library access only when you add a photo of a document. Photos are stored inside the App on your device.</p>
@@ -163,10 +164,11 @@
     <p>Reminders (for example, a daily check-in or a document about to expire) are scheduled on your device. No notification content passes through any server of ours.</p>
 
     <h2>8. When you contact us</h2>
-    <p>If you write to us — from the App's "Send Feedback" button or directly — we receive your e-mail address, your message and any device details included with it (such as app version, iOS version and language). We use this only to answer you and to improve the App, keep it in our support mailbox, and delete it on request. Our mailbox is provided by Google (Gmail).</p>
+    <p>If you write to us — from the App's "Send Feedback" button or directly — we receive your e-mail address, your message and any device details included with it (app version, iOS version, device model, language, region, and the result of the App's built-in encryption self-test). None of your day records or documents are included. We use this only to answer you and to improve the App, keep it in our support mailbox, and delete it on request. Our mailbox is provided by Google (Gmail).</p>
 
     <h2>9. Crash reports</h2>
     <p>If you have chosen in iPhone Settings to share analytics with app developers, Apple may send us anonymous crash and usage reports. We use them only to fix problems. You can switch this off in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
+    <p>If the App itself runs into an error, it may offer to open a pre-filled e-mail to us with the error details, app version and iOS version. Nothing is sent unless you send that e-mail yourself.</p>
 
     <h2>10. What we do not do</h2>
     <ul>
